@@ -7,20 +7,27 @@ export const mapLoader = new Loader({
 });
 
 let map: google.maps.Map;
-
-export interface Place {
-  position: { lat: number; lng: number };
+export interface Garden {
   title: string;
   id: string;
+  position: Position;
+  products: Product[];
 }
 
-export const initMaps = async (places: Place[]) => {
+interface Product {
+  categoryId: string;
+  name: string;
+}
+
+interface Position {
+  lat: number;
+  lng: number;
+}
+
+export const initMaps = async (myPlace: Garden, gardens: Garden[]) => {
   await mapLoader.load();
   await mapLoader.load();
-  const lyon = {
-    title: "Lyon",
-    position: { lat: 45.764043, lng: 4.835659 },
-  };
+
   const { Map } = (await google.maps.importLibrary(
     "maps"
   )) as google.maps.MapsLibrary;
@@ -29,12 +36,21 @@ export const initMaps = async (places: Place[]) => {
   )) as google.maps.MarkerLibrary;
 
   map = new Map(document.getElementById("map") as HTMLElement, {
-    center: lyon.position,
+    center: myPlace.position,
     zoom: 6,
   });
 
-  places.forEach(({ title, position }) => {
-    const marker = new Marker({
+  new Marker({
+    map,
+    position: myPlace.position,
+    title: myPlace.title,
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+    },
+  });
+
+  gardens.forEach(({ title, position }) => {
+    new Marker({
       map,
       position,
       title,

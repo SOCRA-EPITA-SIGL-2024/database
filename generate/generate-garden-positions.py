@@ -1,6 +1,6 @@
 import json
 from math import cos, pi, radians, sin, sqrt
-from random import random, randrange, choices
+from random import random, randrange, sample
 
 PARIS_REFERENCE_POSITION = {"lat": 48.856614, "lng": 2.352222}  # Paris
 LYON_REFERENCE_POSITION = {"lat": 45.764043, "lng": 4.835659}  # Lyon
@@ -26,7 +26,6 @@ vegetables = [
     {"categoryId": "vegetable", "name": "Champignons de Paris"},
     {"categoryId": "vegetable", "name": "Châtaigne"},
     {"categoryId": "vegetable", "name": "Chou"},
-    {"categoryId": "vegetable", "name": "Chou de Bruxelles"},
     {"categoryId": "vegetable", "name": "Chou-fleur"},
     {"categoryId": "vegetable", "name": "Choux"},
     {"categoryId": "vegetable", "name": "Choux de Bruxelles"},
@@ -84,7 +83,7 @@ vegetables = [
 
 
 def create_random_garden_positions(json_path):
-    with open(json_path, "w") as garden_position_json_file:
+    with open(json_path, "w", encoding="utf-8") as garden_position_json_file:
         positions = []
         gardens_around_paris = [
             (idx, PARIS_REFERENCE_POSITION) for idx in list(range(1, 1001))
@@ -146,11 +145,18 @@ def create_garden(user_id, ref_position):
     number_of_vegetable_grown_in_garden = randrange(
         round(total_vegetables_types / 4), total_vegetables_types
     )
-    vegatables_grown = list(choices(vegetables, k=number_of_vegetable_grown_in_garden))
+    vegatables_grown = list(sample(vegetables, number_of_vegetable_grown_in_garden))
+
+    def random_price():
+        return round(random() * 3, 2)
+
+    vegatables_grown_with_price = [
+        {**vegetable, "price": random_price()} for vegetable in vegatables_grown
+    ]
     return {
         "id": f"u{user_id}",
         "position": {"lat": lat, "lng": lng},
-        "products": vegatables_grown,
+        "products": vegatables_grown_with_price,
     }
 
 

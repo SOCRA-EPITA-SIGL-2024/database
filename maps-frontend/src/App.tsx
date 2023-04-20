@@ -3,36 +3,35 @@ import "./App.css";
 import { Garden, initMaps } from "./maps";
 import { getGardensAround } from "./places";
 
+const RAYON = 15; // km
+
 function App() {
-  const lyon: Garden = {
-    title: "Lyon",
+  const etudiant: Garden = {
+    title: "Étudiant",
     position: { lat: 45.764043, lng: 4.835659 },
     products: [],
-    id: "me",
+    id: "etudiant",
   };
+
   const montavus: Garden = {
     title: "Montavus",
     position: { lat: 45.907546, lng: 6.611693 },
     products: [],
     id: "me",
   };
-  const bagnolet: Garden = {
-    title: "Clotte",
-    position: { lat: 48.873760785852795, lng: 2.419567567838784 },
-    products: [],
-    id: "me",
-  };
+
   React.useEffect(() => {
     const init = async () => {
-      const myPlace = bagnolet;
-      const places = await getGardensAround(myPlace, 100);
+      const myPlace = montavus;
+      const places = await getGardensAround(myPlace, RAYON);
       await initMaps(myPlace, places);
     };
     init();
   }, []);
+
   return (
     <>
-      <h1>Points on map</h1>
+      <h1>SOCRA: Vue des potagers dans un rayon de {RAYON} km</h1>
       <div id="map"></div>
     </>
   );

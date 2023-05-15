@@ -87,24 +87,14 @@ Once logged in add the local PostgreSQL:
 - username: sigl2024
 - password: sigl2024
 
-4. You should see postgres schema and sigl2024 schema in the server dropdown:
-
-![display-databases](docs/display-databases.png)
+1. You should see postgres schema and sigl2024 schema in the server dropdown
 
 ## Step 2: Create database and tables
 
 Then, let's create Socarotte's database core schema, with the following specifications:
 
-- A **customer** can have one or more **address**es
-- A **producer**:
-  - can deliver many **product**s
-  - can have one or more **address**
-- A **product**
-  - belongs to one or more **category**
-  - may or maynot have a **discount**
-
-Here is the corresponding entity-relation diagram (ERD), without table attributes:
-![erd](docs/erd.svg)
+- TODO: table schema explanation
+- TODO: ERD diagram with `mermaid`
 
 To create database and tables, we've created necessary SQL files, so you just have to run them.
 
@@ -143,11 +133,9 @@ Now we've created all tables, we need to add some data to it.
 You will use the [COPY](https://www.postgresql.org/docs/12/sql-copy.html) command of postgres to import some data that we provided you with.
 
 > Note: All test data lives under this `scripts/data` folder.
-> It's a split / generated data based on an from [french's gouvernement open dataset](https://www.data.gouv.fr/fr/). The original dataset for this workshop is ["produit sude de france"](./utils/produits-sud-de-france.csv)
-> We generated fake customer and customer addresses by sampling random geo location in a 250km radius from Dijon, France. Those positions are necessary for the computation of the carbon tax (based on the distance between producer address and customer address). We wrote [a python3 script to generate those random geo locations](./utils/generate-customer-addresses.py)
-> Same for product discounts, we just randomly attributed discounts on 20% of the products. We wrote [another python3 script to generate fake discounts](./utils/generate-discounts.py)
 
 Load data from CSV files into `socarotte` database:
+
 ```sh
 # From postgresql/
 # execute the SQL script to import data from CSV files (see. scripts/load-data.sql)
@@ -162,16 +150,19 @@ docker compose exec postgres psql -U sigl2024 -d socarotte -f /tmp/scripts/load-
 To explore your data, you can directly query some rows using pgAdmin's UI on http://localhost:8040 
 
 **Important**: Make sure to refresh tables from the UI after loading data from previous step:
+
 - go to socarotte database > Schemas > public
 - right click on Tables > Refresh
 
 > **If you wish to start from scratch**, type the following commands:
+>
 > ```sh
 > docker compose down -v
 > docker network rm socarotte-postgres
 > ```
-> 
+>
 > This will:
+>
 > - delete both pgadmin and postgres container
 > - delete assiciated docker volumes
 > - delete the socarotte-postgres network
@@ -185,68 +176,18 @@ To explore your data, you can directly query some rows using pgAdmin's UI on htt
 > You can read more here: https://www.postgresql.org/docs/14/rules-materializedviews.html
 
 Let's use the SQL query tool from pgadmin4 to query products on discount.
-![query-tool](docs/query-tool.png)
 
 We wish to select the follwing fields:
-- `product.id`: the product ID on discount
-- `product.name`: the product name on discount
-- `producer.description`: we want to put the producer description for product description
-- `image`: the `product.url_image` of the product
-- `product.price`: the original product price without discount
-- `discount`: the final price corresponding to `price - discount` rounded with 2 decimals
-- `product_discount.valid_until`: the deadline date for the discount (discount are only valid until a certain date)
+
+- TODO: views for products 
 
 > Note: We want to match field names that you have in your backend/src/data/discounts_fr.json
 > This will prevent you from any payload adaption on the frontend side (when rendering products/discounts).
 
 To achieve this selection of table fields, you need to [JOIN](https://www.postgresql.org/docs/current/tutorial-join.html) `product` table with `product_discount` table on the `product id`.
 
-The computation of the `final_price` can be done directly in the `SELECT` statement using `ROUND` and `CAST` builtin:
-```sql
-SELECT
-  ...,
-  ROUND(CAST((product.price - product_discount.discount) AS NUMERIC), 2) as discount
-FROM ...
-```
-
-From your query tool in pgadmin4, type the following [JOIN](https://www.postgresql.org/docs/current/tutorial-join.html) query:
-```sql
-SELECT 
-  product.id,
-  product.name,
-  product.price,
-  product.url_image as image,
-  producer.description,
-  ROUND(CAST((product.price - product_discount.discount) AS NUMERIC), 2) as discount,
-  product_discount.valid_until
-FROM product
-JOIN product_discount
-ON product_discount.product_id = product.id
-JOIN producer
-ON producer.external_id = product.producer_external_id;
-```
-
-That's it! You should obtain all products on discounts.
-
-Now create a new `postgresql/scripts/create-views.sql` (same folder as other SQL scripts) file:
-```sql
-CREATE VIEW product_on_discount AS
-SELECT 
-  product.id,
-  product.name,
-  product.price,
-  product.url_image as image,
-  producer.description,
-  ROUND(CAST((product.price - product_discount.discount) AS NUMERIC), 2) as discount,
-  product_discount.valid_until
-FROM product
-JOIN product_discount
-ON product_discount.product_id = product.id
-JOIN producer
-ON producer.external_id = product.producer_external_id;
-```
-
 And run it on your local postgres:
+
 ```sh
 # from postgresql/
 docker compose cp scripts postgres:/tmp/
@@ -254,40 +195,27 @@ docker compose exec postgres psql -U sigl2024 -d socarotte -f /tmp/scripts/creat
 ```
 
 From your pgAdmin UI, create a new view:
+
 - Right click on `socarotte > Schemas > public > Views` menu and select `Create > View`
 - Name: `ressource_catalog`
 - In the `Code` tab, just copy/paste the following `SELECT` statement
 
 Now you can directly query your `product_on_discount` view:
+
 - from the query tool, run the following SQL statement:
+
 ```sql
 SELECT * FROM product_on_discount;
 ```
 
-## Step 5 **Challenge**: Create a view of products in a category
+## Step 5 **Challenge**
 
-**Objective**:
-1. create `products_in_category` view with following field selection:
-  - `id`: the **product** unique id
-  - `name`: the name of the **product**
-  - `description`: the **producer** description
-  - `price`: the price of the **product** (ignore discounts)
-  - `image`: the product's image URL
-  - `categoryId`: the ID of the product's **category**
-  - `categoryName`: the name of the product's **category**
-1. add your `CREATE VIEW` statement to the `scripts/create-views.sql` script (keep the other view from previous step)
-
-Some hints:
-- you'll need 3 `JOIN` and start with the product table
-- use the query tool from pgadmin4 when building your query
-- use `product_id` and `category_id` from product_category table to join products and categories
-- join `producer.external_id` and `product.producer_external_id` to get access to the producer's description
-
-> Note: creating this view is **necessary** for next steps of this workshop
+TODO
 
 ## Step 6: Expose your ressource catalog from your web API
 
 **Objective**: Adapt your groupe's backend to read from PostgreSQL:
+
 - products on discount
 - products belonging to a category
 - all product categories
@@ -300,6 +228,7 @@ You will also install [dotenv](https://www.npmjs.com/package/dotenv) node module
 environments (your machine and scaleway).
 
 To install it, like any other node modules, type:
+
 ```sh
 # from your backend/ folder (e.g. for group 13: groupe-13/backend)
 # select correct version of node (v16)
@@ -309,6 +238,7 @@ npm i --save pg dotenv
 ```
 
 From your groupeXX/backend folder, create a new `.env` file with:
+
 ```sh
 # inside backend/.env
 RDB_HOST=localhost
@@ -321,6 +251,7 @@ RDB_PASSWORD=sigl2024
 > Note: RDB stands for **R**elational **D**ata**B**ase
 
 - Create a new `backend/src/database.js` file with:
+
 ```js
 const process = require("process");
 const { Pool } = require("pg");

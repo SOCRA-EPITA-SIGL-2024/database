@@ -16,6 +16,8 @@ DROP TYPE IF EXISTS wine_color CASCADE;
 DROP TABLE IF EXISTS wine CASCADE;
 DROP TABLE IF EXISTS wine_price CASCADE;
 DROP TABLE IF EXISTS wine_on_discount CASCADE;
+DROP TABLE IF EXISTS customer CASCADE;
+
 
 
 CREATE TABLE garden (
@@ -123,3 +125,9 @@ CREATE TABLE wine_on_discount(
     discount FLOAT,
     valid_until DATE
 );
+
+CREATE TABLE customer(
+    id SERIAL PRIMARY KEY,
+    username TEXT,
+    address TEXT
+)

@@ -37,3 +37,6 @@ COPY juice_price(id,garden_id,juice_id,price)
 FROM '/tmp/scripts/data/juice_price.csv' DELIMITER ';' CSV HEADER;
 COPY juice_on_discount(juice_price_id,discount,valid_until)
 FROM '/tmp/scripts/data/juice_on_discount.csv' DELIMITER ';' CSV HEADER;
+
+COPY customer(id,username,address)
+FROM '/tmp/scripts/data/customer.csv' DELIMITER ';' CSV HEADER;

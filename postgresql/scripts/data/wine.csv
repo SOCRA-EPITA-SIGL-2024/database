@@ -1,0 +1,786 @@
+id;name;color
+1;Agenais;Rosé
+2;Agenais;Rouge
+3;Agenais;Blanc
+4;Ajaccio;Rosé
+5;Ajaccio;Rouge
+6;Ajaccio;Blanc
+7;Aloxe-Corton;Rouge
+8;Aloxe-Corton;Blanc
+9;Alpes-de-Haute-Provence;Rosé
+10;Alpes-de-Haute-Provence;Rouge
+11;Alpes-de-Haute-Provence;Blanc
+12;Alpes-Maritimes;Rosé
+13;Alpes-Maritimes;Rouge
+14;Alpes-Maritimes;Blanc
+15;Alpilles;Rosé
+16;Alpilles;Rouge
+17;Alpilles;Blanc
+18;Alsace grand cru;Blanc
+19;Alsace grand cru Altenberg de Bergbieten;Blanc
+20;Alsace ou Vin d'Alsace;Rosé
+21;Alsace ou Vin d'Alsace;Rouge
+22;Alsace ou Vin d'Alsace;Blanc
+23;Anjou;Rosé
+24;Anjou;Rouge
+25;Anjou;Blanc
+26;Anjou Brissac;Rouge
+27;Anjou Villages;Rouge
+28;Anjou-Coteaux de la Loire;Blanc
+29;Arbois;Rosé
+30;Arbois;Rouge
+31;Arbois;Blanc
+32;Ardèche;Rosé
+33;Ardèche;Rouge
+34;Ardèche;Blanc
+35;Ariège;Rosé
+36;Ariège;Rouge
+37;Ariège;Blanc
+38;Atlantique;Rosé
+39;Atlantique;Rouge
+40;Atlantique;Blanc
+41;Aude;Rosé
+42;Aude;Rouge
+43;Aude;Blanc
+44;Auxey-Duresses;Rouge
+45;Auxey-Duresses;Blanc
+46;Aveyron;Rosé
+47;Aveyron;Rouge
+48;Aveyron;Blanc
+49;Bandol;Rosé
+50;Bandol;Rouge
+51;Bandol;Blanc
+52;Banyuls;Rosé
+53;Banyuls;Rouge
+54;Banyuls;Rancio
+55;Banyuls;Blanc
+56;Banyuls grand cru;Rancio
+57;Banyuls grand cru;Rouge
+58;Barsac;Blanc
+59;Bâtard-Montrachet;Blanc
+60;Béarn;Rosé
+61;Béarn;Rouge
+62;Béarn;Blanc
+63;Beaujolais;Rosé
+64;Beaujolais;Rouge
+65;Beaujolais;Blanc
+66;Beaumes de Venise;Rouge
+67;Beaune;Rouge
+68;Beaune;Blanc
+69;Bellet ou Vin de Bellet;Rosé
+70;Bellet ou Vin de Bellet;Rouge
+71;Bellet ou Vin de Bellet;Blanc
+72;Bergerac;Rosé
+73;Bergerac;Rouge
+74;Bergerac;Blanc
+75;Bienvenues-Bâtard-Montrachet;Blanc
+76;Blagny;Rouge
+77;Blaye;Rouge
+78;Bonnes-Mares;Rouge
+79;Bonnezeaux;Blanc
+80;Bordeaux;Rosé
+81;Bordeaux;Rouge
+82;Bordeaux;Blanc
+83;Bordeaux supérieur;Rouge
+84;Bordeaux supérieur;Blanc
+85;Bourgogne;Rosé
+86;Bourgogne;Rouge
+87;Bourgogne;Blanc
+88;Bourgogne aligoté;Blanc
+89;Bourgogne mousseux;Rouge
+90;Bourgogne Passe-tout-grains;Rosé
+91;Bourgogne Passe-tout-grains;Rouge
+92;Bourgueil;Rosé
+93;Bourgueil;Rouge
+94;Bouzeron;Blanc
+95;Brouilly;Rouge
+96;Brulhois;Rosé
+97;Brulhois;Rouge
+98;Bugey;Rosé
+99;Bugey;Rouge
+100;Bugey;Blanc
+101;Buzet;Rosé
+102;Buzet;Rouge
+103;Buzet;Blanc
+104;Cabardès;Rosé
+105;Cabardès;Rouge
+106;Cabernet d'Anjou;Rosé
+107;Cadillac;Blanc
+108;Cahors;Rouge
+109;Cairanne;Rouge
+110;Cairanne;Blanc
+111;Calvados;Rosé
+112;Calvados;Rouge
+113;Calvados;Blanc
+114;Canon Fronsac;Rouge
+115;Cassis;Rosé
+116;Cassis;Rouge
+117;Cassis;Blanc
+118;Cérons;Blanc
+119;Cévennes;Rosé
+120;Cévennes;Rouge
+121;Cévennes;Blanc
+122;Chablis;Blanc
+123;Chablis Grand Cru;Blanc
+124;Chambertin;Rouge
+125;Chambertin-Clos de Bèze;Rouge
+126;Chambolle-Musigny;Rouge
+127;Champagne;Rosé
+128;Champagne;Blanc
+129;Chapelle-Chambertin;Rouge
+130;Charentais;Rosé
+131;Charentais;Rouge
+132;Charentais;Blanc
+133;Charlemagne;Blanc
+134;Charmes-Chambertin;Rouge
+135;Chassagne-Montrachet;Rouge
+136;Chassagne-Montrachet;Blanc
+137;Château-Chalon;Blanc
+138;Château-Grillet;Blanc
+139;Châteaumeillant;Rosé
+140;Châteaumeillant;Rouge
+141;Châteauneuf-du-Pape;Rouge
+142;Châteauneuf-du-Pape;Blanc
+143;Châtillon-en-Diois;Rosé
+144;Châtillon-en-Diois;Rouge
+145;Châtillon-en-Diois;Blanc
+146;Chénas;Rouge
+147;Chevalier-Montrachet;Blanc
+148;Cheverny;Rosé
+149;Cheverny;Rouge
+150;Cheverny;Blanc
+151;Chinon;Rosé
+152;Chinon;Rouge
+153;Chinon;Blanc
+154;Chiroubles;Rouge
+155;Chorey-lès-Beaune;Rouge
+156;Chorey-lès-Beaune;Blanc
+157;Cité de Carcassonne;Rosé
+158;Cité de Carcassonne;Rouge
+159;Cité de Carcassonne;Blanc
+160;Clairette de Bellegarde;Blanc
+161;Clairette de Die;Rosé
+162;Clairette de Die;Blanc
+163;Clairette du Languedoc;Blanc
+164;Clairette du Languedoc;Rancio
+165;Clos de la Roche;Rouge
+166;Clos de Tart;Rouge
+167;Clos de Vougeot ou Clos Vougeot;Rouge
+168;Clos des Lambrays;Rouge
+169;Clos Saint-Denis;Rouge
+170;Collines Rhodaniennes;Rosé
+171;Collines Rhodaniennes;Rouge
+172;Collines Rhodaniennes;Blanc
+173;Collioure;Rosé
+174;Collioure;Rouge
+175;Collioure;Blanc
+176;Comté Tolosan;Rosé
+177;Comté Tolosan;Rouge
+178;Comté Tolosan;Blanc
+179;Comtés Rhodaniens;Rosé
+180;Comtés Rhodaniens;Rouge
+181;Comtés Rhodaniens;Blanc
+182;Condrieu;Blanc
+183;Corbières;Rosé
+184;Corbières;Rouge
+185;Corbières;Blanc
+186;Corbières-Boutenac;Rouge
+187;Cornas;Rouge
+188;Corrèze;Rouge
+189;Corrèze;Blanc
+190;Corrèze;Rosé
+191;Corton;Rouge
+192;Corton;Blanc
+193;Corton-Charlemagne;Blanc
+194;Costières de Nîmes;Rosé
+195;Costières de Nîmes;Rouge
+196;Costières de Nîmes;Blanc
+197;Côte de Beaune;Rouge
+198;Côte de Beaune;Blanc
+199;Côte de Beaune-Villages;Rouge
+200;Côte de Brouilly;Rouge
+201;Côte de Nuits-Villages ou Vins fins de la Côte de Nuits;Rouge
+202;Côte de Nuits-Villages ou Vins fins de la Côte de Nuits;Blanc
+203;Côte roannaise;Rosé
+204;Côte roannaise;Rouge
+205;Côte Rôtie;Rouge
+206;Côte Vermeille;Rosé
+207;Côte Vermeille;Rouge
+208;Côte Vermeille;Blanc
+209;Coteaux Bourguignons ou Bourgogne grand ordinaire ou Bourgogne ordinaire;Rosé
+210;Coteaux Bourguignons ou Bourgogne grand ordinaire ou Bourgogne ordinaire;Rouge
+211;Coteaux Bourguignons ou Bourgogne grand ordinaire ou Bourgogne ordinaire;Blanc
+212;Coteaux champenois;Rosé
+213;Coteaux champenois;Rouge
+214;Coteaux champenois;Blanc
+215;Coteaux d'Aix-en-Provence;Rosé
+216;Coteaux d'Aix-en-Provence;Rouge
+217;Coteaux d'Aix-en-Provence;Blanc
+218;Coteaux d'Ancenis;Rosé
+219;Coteaux d'Ancenis;Rouge
+220;Coteaux d'Ancenis;Blanc
+221;Coteaux d'Ensérune;Rosé
+222;Coteaux d'Ensérune;Rouge
+223;Coteaux d'Ensérune;Blanc
+224;Coteaux de Béziers;Rosé
+225;Coteaux de Béziers;Rouge
+226;Coteaux de Béziers;Blanc
+227;Coteaux de Coiffy;Rosé
+228;Coteaux de Coiffy;Rouge
+229;Coteaux de Coiffy;Blanc
+230;Coteaux de Die;Blanc
+231;Coteaux de Glanes;Rosé
+232;Coteaux de Glanes;Rouge
+233;Coteaux de Glanes;Blanc
+234;Coteaux de l'Ain;Rosé
+235;Coteaux de l'Ain;Rouge
+236;Coteaux de l'Ain;Blanc
+237;Coteaux de l'Aubance;Blanc
+238;Coteaux de l'Auxois;Rosé
+239;Coteaux de l'Auxois;Rouge
+240;Coteaux de l'Auxois;Blanc
+241;Coteaux de Narbonne;Rosé
+242;Coteaux de Narbonne;Rouge
+243;Coteaux de Narbonne;Blanc
+244;Coteaux de Peyriac;Rosé
+245;Coteaux de Peyriac;Rouge
+246;Coteaux de Peyriac;Blanc
+247;Coteaux de Saumur;Blanc
+248;Coteaux de Tannay;Rosé
+249;Coteaux de Tannay;Rouge
+250;Coteaux de Tannay;Blanc
+251;Coteaux des Baronnies;Rosé
+252;Coteaux des Baronnies;Rouge
+253;Coteaux des Baronnies;Blanc
+254;Coteaux du Cher et de l'Arnon;Rosé
+255;Coteaux du Cher et de l'Arnon;Rouge
+256;Coteaux du Cher et de l'Arnon;Blanc
+257;Coteaux du Giennois;Rosé
+258;Coteaux du Giennois;Rouge
+259;Coteaux du Giennois;Blanc
+260;Coteaux du Layon;Blanc
+261;Coteaux du Loir;Rosé
+262;Coteaux du Loir;Rouge
+263;Coteaux du Loir;Blanc
+264;Coteaux du Lyonnais;Rosé
+265;Coteaux du Lyonnais;Rouge
+266;Coteaux du Lyonnais;Blanc
+267;Coteaux du Pont du Gard;Rosé
+268;Coteaux du Pont du Gard;Rouge
+269;Coteaux du Pont du Gard;Blanc
+270;Coteaux du Quercy;Rouge
+271;Coteaux du Vendômois;Gris
+272;Coteaux du Vendômois;Rouge
+273;Coteaux du Vendômois;Blanc
+274;Coteaux varois en Provence;Rosé
+275;Coteaux varois en Provence;Rouge
+276;Coteaux varois en Provence;Blanc
+277;Côtes Catalanes;Rosé
+278;Côtes Catalanes;Rouge
+279;Côtes Catalanes;Blanc
+280;Côtes d'Auvergne;Rosé
+281;Côtes d'Auvergne;Rouge
+282;Côtes d'Auvergne;Blanc
+283;Côtes de Bergerac;Rouge
+284;Côtes de Bergerac;Blanc
+285;Côtes de Blaye;Blanc
+286;Côtes de Bordeaux;Rouge
+287;Côtes de Bordeaux;Blanc
+288;Côtes de Bordeaux-Saint-Macaire;Blanc
+289;Côtes de Bourg Bourg et Bourgeais;Rouge
+290;Côtes de Bourg Bourg et Bourgeais;Blanc
+291;Côtes de Duras;Rosé
+292;Côtes de Duras;Rouge
+293;Côtes de Duras;Blanc
+294;Côtes de Gascogne;Rosé
+295;Côtes de Gascogne;Rouge
+296;Côtes de Gascogne;Blanc
+297;Côtes de la Charité;Rosé
+298;Côtes de la Charité;Rouge
+299;Côtes de la Charité;Blanc
+300;Côtes de Meuse;Rosé
+301;Côtes de Meuse;Rouge
+302;Côtes de Meuse;Blanc
+303;Côtes de Millau;Rosé
+304;Côtes de Millau;Rouge
+305;Côtes de Millau;Blanc
+306;Côtes de Montravel;Blanc
+307;Côtes de Provence;Rosé
+308;Côtes de Provence;Rouge
+309;Côtes de Provence;Blanc
+310;Côtes de Thau;Rosé
+311;Côtes de Thau;Rouge
+312;Côtes de Thau;Blanc
+313;Côtes de Thongue;Rosé
+314;Côtes de Thongue;Rouge
+315;Côtes de Thongue;Blanc
+316;Côtes de Toul;Gris
+317;Côtes de Toul;Rouge
+318;Côtes de Toul;Blanc
+319;Côtes du Forez;Rosé
+320;Côtes du Forez;Rouge
+321;Côtes du Jura;Rosé
+322;Côtes du Jura;Rouge
+323;Côtes du Jura;Blanc
+324;Côtes du Lot;Rosé
+325;Côtes du Lot;Rouge
+326;Côtes du Lot;Blanc
+327;Côtes du Marmandais;Rosé
+328;Côtes du Marmandais;Rouge
+329;Côtes du Marmandais;Blanc
+330;Côtes du Rhône;Rosé
+331;Côtes du Rhône;Rouge
+332;Côtes du Rhône;Blanc
+333;Côtes du Rhône Villages;Rosé
+334;Côtes du Rhône Villages;Rouge
+335;Côtes du Rhône Villages;Blanc
+336;Côtes du Roussillon;Rosé
+337;Côtes du Roussillon;Rouge
+338;Côtes du Roussillon;Blanc
+339;Côtes du Roussillon Villages;Rouge
+340;Côtes du Tarn;Rosé
+341;Côtes du Tarn;Rouge
+342;Côtes du Tarn;Blanc
+343;Côtes du Vivarais;Rosé
+344;Côtes du Vivarais;Rouge
+345;Côtes du Vivarais;Blanc
+346;Coulée de Serrant;Blanc
+347;Cour-Cheverny;Blanc
+348;Crémant d’Alsace;Rosé
+349;Crémant d’Alsace;Blanc
+350;Crémant de Bordeaux;Rosé
+351;Crémant de Bordeaux;Blanc
+352;Crémant de Bourgogne;Rosé
+353;Crémant de Bourgogne;Blanc
+354;Crémant de Die;Blanc
+355;Crémant de Limoux;Rosé
+356;Crémant de Limoux;Blanc
+357;Crémant de Loire;Rosé
+358;Crémant de Loire;Blanc
+359;Crémant du Jura;Rosé
+360;Crémant du Jura;Blanc
+361;Criots-Bâtard-Montrachet;Blanc
+362;Crozes-Hermitage ou Crozes-Ermitage;Rouge
+363;Crozes-Hermitage ou Crozes-Ermitage;Blanc
+364;Drôme;Rosé
+365;Drôme;Rouge
+366;Drôme;Blanc
+367;Duché d'Uzès;Rosé
+368;Duché d'Uzès;Rouge
+369;Duché d'Uzès;Blanc
+370;Echezeaux;Rouge
+371;Entraygues - Le Fel;Rosé
+372;Entraygues - Le Fel;Rouge
+373;Entraygues - Le Fel;Blanc
+374;Entre-deux-Mers;Blanc
+375;Estaing;Rosé
+376;Estaing;Rouge
+377;Estaing;Blanc
+378;Faugères;Rosé
+379;Faugères;Rouge
+380;Faugères;Blanc
+381;Fiefs Vendéens;Rosé
+382;Fiefs Vendéens;Rouge
+383;Fiefs Vendéens;Blanc
+384;Fitou;Rouge
+385;Fixin;Rouge
+386;Fixin;Blanc
+387;Fleurie;Rouge
+388;Floc de Gascogne;Rosé
+389;Floc de Gascogne;Blanc
+390;Franche-Comté;Rosé
+391;Franche-Comté;Rouge
+392;Franche-Comté;Blanc
+393;Fronsac;Rouge
+394;Fronton;Rosé
+395;Fronton;Rouge
+396;Gaillac;Rosé
+397;Gaillac;Rouge
+398;Gaillac;Blanc
+399;Gaillac premières côtes;Blanc
+400;Gard;Rosé
+401;Gard;Rouge
+402;Gard;Blanc
+403;Gers;Rosé
+404;Gers;Rouge
+405;Gers;Blanc
+406;Gevrey-Chambertin;Rouge
+407;Gigondas;Rosé
+408;Gigondas;Rouge
+409;Givry;Rouge
+410;Givry;Blanc
+411;Grand Roussillon;Rosé
+412;Grand Roussillon;Rancio
+413;Grand Roussillon;Rouge
+414;Grand Roussillon;Blanc
+415;Grands-Echezeaux;Rouge
+416;Graves;Rouge
+417;Graves;Blanc
+418;Graves de Vayres;Rouge
+419;Graves de Vayres;Blanc
+420;Graves supérieures;Blanc
+421;Grignan-les-Adhémar;Rosé
+422;Grignan-les-Adhémar;Rouge
+423;Grignan-les-Adhémar;Blanc
+424;Griotte-Chambertin;Rouge
+425;Gros Plant du Pays Nantais;Blanc
+426;Haut-Médoc;Rouge
+427;Haut-Montravel;Blanc
+428;Haut-Poitou;Rosé
+429;Haut-Poitou;Rouge
+430;Haut-Poitou;Blanc
+431;Haute Vallée de l'Aude;Rosé
+432;Haute Vallée de l'Aude;Rouge
+433;Haute Vallée de l'Aude;Blanc
+434;Haute Vallée de l'Orb;Rosé
+435;Haute Vallée de l'Orb;Rouge
+436;Haute Vallée de l'Orb;Blanc
+437;Haute-Marne;Rosé
+438;Haute-Marne;Rouge
+439;Haute-Marne;Blanc
+440;Haute-Vienne;Rosé
+441;Haute-Vienne;Rouge
+442;Haute-Vienne;Blanc
+443;Hautes-Alpes;Rosé
+444;Hautes-Alpes;Rouge
+445;Hautes-Alpes;Blanc
+446;Hermitage ou Ermitage ou l'Hermitage ou l'Ermitage;Rouge
+447;Hermitage ou Ermitage ou l'Hermitage ou l'Ermitage;Blanc
+448;Ile de Beauté;Rosé
+449;Ile de Beauté;Rouge
+450;Ile de Beauté;Blanc
+451;Île-de-France;Rosé
+452;Île-de-France;Rouge
+453;Île-de-France;Blanc
+454;Irancy;Rouge
+455;Irouléguy;Rosé
+456;Irouléguy;Rouge
+457;Irouléguy;Blanc
+458;Isère;Rosé
+459;Isère;Rouge
+460;Isère;Blanc
+461;Jasnières;Blanc
+462;Juliénas;Rouge
+463;Jurançon;Blanc
+464;L'Etoile;Blanc
+465;La Clape;Rouge
+466;La Clape;Blanc
+467;La Grande Rue;Rouge
+468;La Romanée;Rouge
+469;La Tâche;Rouge
+470;Ladoix;Rouge
+471;Ladoix;Blanc
+472;Lalande-de-Pomerol;Rouge
+473;Landes;Rosé
+474;Landes;Rouge
+475;Landes;Blanc
+476;Languedoc;Rosé
+477;Languedoc;Rouge
+478;Languedoc;Blanc
+479;Latricières-Chambertin;Rouge
+480;Lavilledieu;Rosé
+481;Lavilledieu;Rouge
+482;Le Pays Cathare;Rosé
+483;Le Pays Cathare;Rouge
+484;Le Pays Cathare;Blanc
+485;Les Baux de Provence;Rosé
+486;Les Baux de Provence;Rouge
+487;Limoux;Rouge
+488;Limoux;Blanc
+489;Lirac;Rosé
+490;Lirac;Rouge
+491;Lirac;Blanc
+492;Listrac-Médoc;Rouge
+493;Loupiac;Blanc
+494;Luberon;Rosé
+495;Luberon;Rouge
+496;Luberon;Blanc
+497;Lussac-Saint-Emilion;Rouge
+498;Mâcon;Rosé
+499;Mâcon;Rouge
+500;Mâcon;Blanc
+501;Macvin du Jura;Rosé
+502;Macvin du Jura;Rouge
+503;Macvin du Jura;Blanc
+504;Madiran;Rouge
+505;Malepère;Rosé
+506;Malepère;Rouge
+507;Maranges;Rouge
+508;Maranges;Blanc
+509;Marcillac;Rosé
+510;Marcillac;Rouge
+511;Margaux;Rouge
+512;Marsannay;Rosé
+513;Marsannay;Rouge
+514;Marsannay;Blanc
+515;Maures;Rosé
+516;Maures;Rouge
+517;Maures;Blanc
+518;Maury;Rouge
+519;Maury;Rancio
+520;Maury;Tuilé
+521;Maury;Blanc
+522;Mazis-Chambertin;Rouge
+523;Mazoyères-Chambertin;Rouge
+524;Méditerranée;Rosé
+525;Méditerranée;Rouge
+526;Méditerranée;Blanc
+527;Médoc;Rouge
+528;Menetou-Salon;Rosé
+529;Menetou-Salon;Rouge
+530;Menetou-Salon;Blanc
+531;Mercurey;Rouge
+532;Mercurey;Blanc
+533;Meursault;Rouge
+534;Meursault;Blanc
+535;Minervois;Rosé
+536;Minervois;Rouge
+537;Minervois;Blanc
+538;Minervois-La Livinière;Rouge
+539;Monbazillac;Blanc
+540;Mont Caume;Rosé
+541;Mont Caume;Rouge
+542;Mont Caume;Blanc
+543;Montagne-Saint-Emilion;Rouge
+544;Montagny;Blanc
+545;Monthélie;Blanc
+546;Monthélie;Rouge
+547;Montlouis-sur-Loire;Blanc
+548;Montrachet;Blanc
+549;Montravel;Rouge
+550;Montravel;Blanc
+551;Morey-Saint-Denis;Rouge
+552;Morey-Saint-Denis;Blanc
+553;Morgon;Rouge
+554;Moselle;Rosé
+555;Moselle;Rouge
+556;Moselle;Blanc
+557;Moulin-à-Vent;Rouge
+558;Moulis ou Moulis-en-Médoc;Rouge
+559;Muscadet;Blanc
+560;Muscadet Coteaux de la Loire;Blanc
+561;Muscadet Côtes de Grandlieu;Blanc
+562;Muscadet Sèvre et Maine;Blanc
+563;Muscat de Beaumes-de-Venise;Rosé
+564;Muscat de Beaumes-de-Venise;Rouge
+565;Muscat de Beaumes-de-Venise;Blanc
+566;Muscat de Frontignan ou Frontignan ou Vin de Frontignan;Blanc
+567;Muscat de Lunel;Blanc
+568;Muscat de Mireval;Blanc
+569;Muscat de Rivesaltes;Blanc
+570;Muscat de Saint-Jean-de-Minervois;Blanc
+571;Muscat du Cap Corse;Blanc
+572;Musigny;Rouge
+573;Musigny;Blanc
+574;Nuits-Saint-Georges;Rouge
+575;Nuits-Saint-Georges;Blanc
+576;Orléans;Rosé
+577;Orléans;Rouge
+578;Orléans;Blanc
+579;Orléans-Cléry;Rouge
+580;Pacherenc du Vic-Bilh;Blanc
+581;Palette;Rosé
+582;Palette;Rouge
+583;Palette;Blanc
+584;Patrimonio;Rosé
+585;Patrimonio;Rouge
+586;Patrimonio;Blanc
+587;Pauillac;Rouge
+588;Pays d'Hérault;Rosé
+589;Pays d'Hérault;Rouge
+590;Pays d'Hérault;Blanc
+591;Pays d'Oc;Rosé
+592;Pays d'Oc;Gris
+593;Pays d'Oc;Rouge
+594;Pays d'Oc;Blanc
+595;Pays de Brive;Rosé
+596;Pays de Brive;Rouge
+597;Pays de Brive;Blanc
+598;Pays des Bouches-du-Rhône;Rosé
+599;Pays des Bouches-du-Rhône;Rouge
+600;Pays des Bouches-du-Rhône;Blanc
+601;Pécharmant;Rouge
+602;Périgord;Rouge
+603;Périgord;Rosé
+604;Périgord;Blanc
+605;Pernand-Vergelesses;Rouge
+606;Pernand-Vergelesses;Blanc
+607;Pessac-Léognan;Rouge
+608;Pessac-Léognan;Blanc
+609;Petit Chablis;Blanc
+610;Pic Saint-Loup;Rosé
+611;Pic Saint-Loup;Rouge
+612;Picpoul de Pinet;Blanc
+613;Pierrevert;Rosé
+614;Pierrevert;Rouge
+615;Pierrevert;Blanc
+616;Pineau des Charentes;Rosé
+617;Pineau des Charentes;Rouge
+618;Pineau des Charentes;Blanc
+619;Pomerol;Rouge
+620;Pommard;Rouge
+621;Pouilly-Fuissé;Blanc
+622;Pouilly-Fumé ou Blanc Fumé de Pouilly;Blanc
+623;Pouilly-Loché;Blanc
+624;Pouilly-sur-Loire;Blanc
+625;Pouilly-Vinzelles;Blanc
+626;Premières Côtes de Bordeaux;Blanc
+627;Puisseguin-Saint-Emilion;Rouge
+628;Puligny-Montrachet;Rouge
+629;Puligny-Montrachet;Blanc
+630;Puy-de-Dôme;Rosé
+631;Puy-de-Dôme;Rouge
+632;Puy-de-Dôme;Blanc
+633;Quarts de Chaume;Blanc
+634;Quincy;Blanc
+635;Rasteau;Rosé
+636;Rasteau;Rouge
+637;Rasteau;Tuilé
+638;Rasteau;Ambré
+639;Rasteau;Rancio
+640;Rasteau;Grenat
+641;Rasteau;Blanc
+642;Régnié;Rouge
+643;Reuilly;Rosé
+644;Reuilly;Rouge
+645;Reuilly;Blanc
+646;Richebourg;Rouge
+647;Rivesaltes;Rancio
+648;Rivesaltes;Tuilé
+649;Rivesaltes;Grenat
+650;Rivesaltes;Ambré
+651;Rivesaltes;Blanc
+652;Romanée-Conti;Rouge
+653;Romanée-Saint-Vivant;Rouge
+654;Rosé d'Anjou;Rosé
+655;Rosé de Loire;Rosé
+656;Rosé des Riceys;Rosé
+657;Rosette;Blanc
+658;Roussette de Savoie;Blanc
+659;Roussette du Bugey;Blanc
+660;Ruchottes-Chambertin;Rouge
+661;Rully;Rouge
+662;Rully;Blanc
+663;Sable de Camargue;Gris
+664;Sable de Camargue;Rosé
+665;Sable de Camargue;Rouge
+666;Sable de Camargue;Blanc
+667;Saint-Amour;Rouge
+668;Saint-Aubin;Rouge
+669;Saint-Aubin;Blanc
+670;Saint-Bris;Blanc
+671;Saint-Chinian;Rosé
+672;Saint-Chinian;Rouge
+673;Saint-Chinian;Blanc
+674;Saint-Emilion;Rouge
+675;Saint-Emilion grand cru;Rouge
+676;Saint-Estèphe;Rouge
+677;Saint-Georges-Saint-Emilion;Rouge
+678;Saint-Guilhem-le-Désert;Rosé
+679;Saint-Guilhem-le-Désert;Rouge
+680;Saint-Guilhem-le-Désert;Blanc
+681;Saint-Joseph;Rouge
+682;Saint-Joseph;Blanc
+683;Saint-Julien;Rouge
+684;Saint-Mont;Rosé
+685;Saint-Mont;Rouge
+686;Saint-Mont;Blanc
+687;Saint-Nicolas-de-Bourgueil;Rosé
+688;Saint-Nicolas-de-Bourgueil;Rouge
+689;Saint-Péray;Blanc
+690;Saint-Pourçain;Rosé
+691;Saint-Pourçain;Rouge
+692;Saint-Pourçain;Blanc
+693;Saint-Romain;Rouge
+694;Saint-Romain;Blanc
+695;Saint-Sardos;Rosé
+696;Saint-Sardos;Rouge
+697;Saint-Véran;Blanc
+698;Sainte-Croix-du-Mont;Blanc
+699;Sainte-Marie-la-Blanche;Rosé
+700;Sainte-Marie-la-Blanche;Rouge
+701;Sainte-Marie-la-Blanche;Blanc
+702;Sancerre;Rosé
+703;Sancerre;Rouge
+704;Sancerre;Blanc
+705;Santenay;Rouge
+706;Santenay;Blanc
+707;Saône-et-Loire;Rosé
+708;Saône-et-Loire;Rouge
+709;Saône-et-Loire;Blanc
+710;Saumur;Rosé
+711;Saumur;Rouge
+712;Saumur;Blanc
+713;Saumur-Champigny;Rouge
+714;Saussignac;Blanc
+715;Sauternes;Blanc
+716;Savennières;Blanc
+717;Savennières Roche aux Moines;Blanc
+718;Savigny-lès-Beaune;Rouge
+719;Savigny-lès-Beaune;Blanc
+720;Seyssel;Blanc
+721;Tavel;Rosé
+722;Terrasses du Larzac;Rouge
+723;Terres du Midi;Rosé
+724;Terres du Midi;Rouge
+725;Terres du Midi;Blanc
+726;Thézac-Perricard;Rosé
+727;Thézac-Perricard;Rouge
+728;Thézac-Perricard;Blanc
+729;Touraine;Rosé
+730;Touraine;Rouge
+731;Touraine;Blanc
+732;Touraine Noble Joué;Rosé
+733;Tursan;Rosé
+734;Tursan;Rouge
+735;Tursan;Blanc
+736;Urfé;Rosé
+737;Urfé;Rouge
+738;Urfé;Blanc
+739;Vacqueyras;Rosé
+740;Vacqueyras;Rouge
+741;Vacqueyras;Blanc
+742;Val de Loire;Rosé
+743;Val de Loire;Rouge
+744;Val de Loire;Blanc
+745;Valençay;Rosé
+746;Valençay;Rouge
+747;Valençay;Blanc
+748;Vallée du Paradis;Rosé
+749;Vallée du Paradis;Rouge
+750;Vallée du Paradis;Blanc
+751;Vallée du Torgan;Rosé
+752;Vallée du Torgan;Rouge
+753;Vallée du Torgan;Blanc
+754;Var;Rosé
+755;Var;Rouge
+756;Var;Blanc
+757;Vaucluse;Rosé
+758;Vaucluse;Rouge
+759;Vaucluse;Blanc
+760;Ventoux;Rosé
+761;Ventoux;Rouge
+762;Ventoux;Blanc
+763;Vézelay;Blanc
+764;Vicomté d'Aumelas;Rosé
+765;Vicomté d'Aumelas;Rouge
+766;Vicomté d'Aumelas;Blanc
+767;Vin de Corse ou Corse;Rosé
+768;Vin de Corse ou Corse;Rouge
+769;Vin de Corse ou Corse;Blanc
+770;Vin de Savoie ou Savoie;Rosé
+771;Vin de Savoie ou Savoie;Rouge
+772;Vin de Savoie ou Savoie;Blanc
+773;Vin des Allobroges;Rosé
+774;Vin des Allobroges;Rouge
+775;Vin des Allobroges;Blanc
+776;Vinsobres;Rouge
+777;Viré-Clessé;Blanc
+778;Volnay;Rouge
+779;Vosne-Romanée;Rouge
+780;Vougeot;Rouge
+781;Vougeot;Blanc
+782;Vouvray;Blanc
+783;Yonne;Rosé
+784;Yonne;Rouge
+785;Yonne;Blanc
